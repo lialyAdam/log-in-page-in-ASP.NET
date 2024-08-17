@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Login Form";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    @*     <link href="~/css/custom.css" rel="stylesheet"> *@
+    <link href="~/css/custom.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/assets/ico/favicon.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="login-container col-lg-4 col-md-6 col-sm-8 col-12">
+                <div class="login-title text-center mb-4">
+                    <h2><span>Logo<strong>Name</strong></span></h2>
+                </div>
+                <div class="login-content bg-dark text-white p-4 rounded shadow">
+                    <div class="login-header mb-3 text-end">
+                        <h3><strong>مرحباً</strong></h3>
+                        <h5>يرجى تعبئة الحقول المطلوبة بما يتناسب مع الحقول </h5>
+                    </div>
+                    <div class="login-body">
+                        <form role="form" action="" method="post" class="login-form">
+                            <div class="mb-3 position-relative">
+                                <input id="form-username" type="text" name="form-username" placeholder="...إسم المستخدم" class="form-control form-username">
+                                <i class="fa fa-user position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                            </div>
+                            <div class="mb-3 position-relative">
+                                <input id="form-password" type="password" name="form-password" placeholder="...كلمة المرور" class="form-control form-password">
+                                <i class="fa fa-lock position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                            </div>
+                            <div class="mb-3 text-end">
+                                <a href="#" class="text-warning">هل نسيت كلمة السر ؟</a>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary w-100"><strong>سجل الدخول</strong></button>
+                            </div>
+                        </form>
+                    </div> <!-- end login-body -->
+                </div><!-- end login-content -->
+
+            </div> <!-- end login-container -->
+        </div>
+    </div><!-- end container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
